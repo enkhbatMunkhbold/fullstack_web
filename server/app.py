@@ -84,4 +84,7 @@ class SignUp(Resource):
     except Exception as e:
       return {'error': f'An error occured during registration {str(e)}'}, 500
     
-api.add_resource(SignUp, '/sign_up')
+api.add_resource(SignUp, '/signup')
+
+if __name__ == '__main__':
+  app.run(port=5555, debug=True)
