@@ -42,7 +42,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <NavBar />
+        <NavBar user={user} setUser={setUser} />
         <div>
           <Routes>
             { user ? (
